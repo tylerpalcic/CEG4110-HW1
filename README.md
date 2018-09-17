@@ -14,13 +14,23 @@ Selecting tab 2 at the top of the screen will move the user to a new screen cont
 ## External Libraries
 A color picker library is used for the drawing canvas in tab 2 which can be found here:
 
+
 https://github.com/Pes8/android-material-color-picker-dialog?utm_source=android-arsenal.com&utm_medium=referral&utm_campaign=5609
 
 You may have to add some packaging options to the build.gradle inorder for the project to build once this color picker has been implemented. The ones that I added are here:
 
+
+This one up top right inside the "android" opening curly-brace.
+````
  packagingOptions {
         pickFirst 'lib/armeabi-v7a/libassmidi.so'
         pickFirst 'lib/x86/libassmidi.so'
     }
-    
-    
+````
+
+ These two towards the bottom of the file with the other implementations.
+ ````
+  implementation 'com.pes.materialcolorpicker:library:1.2.4'
+  implementation 'com.android.support:design:+'
+````
+
