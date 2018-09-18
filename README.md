@@ -14,7 +14,7 @@ Selecting tab 2 at the top of the screen will move the user to a new screen cont
 ![](https://github.com/tylerpalcic/CEG4110-HW1/blob/master/screenshots/hw1_part2_scrnst.png)
 
 ## External Libraries
-A color picker library is used for the drawing canvas in tab 2 which can be found here: 
+The color picker library used for the drawing canvas is Pes8/android-material-color-picker-dialog which can be found here: 
 
 https://github.com/Pes8/android-material-color-picker-dialog?utm_source=android-arsenal.com&utm_medium=referral&utm_campaign=5609
 
