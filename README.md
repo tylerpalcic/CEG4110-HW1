@@ -16,7 +16,7 @@ Selecting tab 2 at the top of the screen will move the user to a new screen cont
 ## External Libraries
 The color picker library used for the drawing canvas is Pes8/android-material-color-picker-dialog which can be found here: 
 
-https://github.com/Pes8/android-material-color-picker-dialog?utm_source=android-arsenal.com&utm_medium=referral&utm_campaign=5609
+* https://github.com/Pes8/android-material-color-picker-dialog?utm_source=android-arsenal.com&utm_medium=referral&utm_campaign=5609
 
 
 You may have to add some packaging options to the build.gradle in order for the project to build once this color picker has been implemented. The ones that I added are here:
@@ -41,3 +41,9 @@ This one up top right inside the "android" opening curly-brace.
 The basic design of this application is two separate fragment classes where the content for each tab is built. An additional class for the pager adapter and another class where the canvas is built. The main class is where the actual tab layout that houses each UI is constructed along with the implementation of the pager adapter.
 
 I chose to design the application in this fashion for a couple of reasons. The first being that I knew that the project was going to need two different tabs in order to switch back and forth from one UI to the other. So I created two new java classes and xml files for each tab fragment. The drawing canvas would then need to be built in a separate class and referenced within the class of the tab using it. I needed a pager adapter in order to switch between each tab so one was built in another class as well. The main class of course is where all the additional built classes are implemented.
+
+## Author
+* Tyler Palcic
+
+## Built with
+* Android Studio
